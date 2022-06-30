@@ -7,7 +7,7 @@ var cObj;
 var fObj;
 
 // GET THE CONDITIONS
-weatherConditions.open('GET','http://api.openweathermap.org/data/2.5/weather?zip=11581,us&appid=a4b2ebf7939f51a95084fbe9762adb63&units=imperial', true);
+weatherConditions.open('GET','//api.openweathermap.org/data/2.5/weather?zip=11581,us&appid=a4b2ebf7939f51a95084fbe9762adb63&units=imperial', true);
 weatherConditions.responseType = 'text';
 weatherConditions.send(null);
 
@@ -34,7 +34,7 @@ weatherConditions.onload = function() {
 
 
 // GET THE FORECARST
-weatherForecast.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?zip=11581,us&appid=a4b2ebf7939f51a95084fbe9762adb63&units=imperial', true);
+weatherForecast.open('GET', '//api.openweathermap.org/data/2.5/forecast?zip=11581,us&appid=a4b2ebf7939f51a95084fbe9762adb63&units=imperial', true);
 weatherForecast.responseType = 'text'; 
 weatherForecast.send();
 
